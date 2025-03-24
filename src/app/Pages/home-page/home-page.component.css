@@ -8,14 +8,13 @@ html, body {
 }
 /* Contenedor principal */
 .scroll-container {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    
-  }
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
   /* Paneles */
   .panel {
-    min-height: 100vh; /* Usamos min-height en lugar de height fijo */
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,25 +23,23 @@ html, body {
     transition: transform 1s ease-in-out;
     will-change: transform;
   }
-  
-  /* Estilo sticky para paneles */
-  .panel .sticky-header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
+  .panel:not(.animate) .animate__animated {
+    animation-play-state: paused;
+    opacity: 0;
   }
   
-  /* Estilo para el contenido principal de cada panel */
-  .panel .main-content {
-    padding-top: 20px;
+  /* Controles de animación: Esto muestra y anima los elementos cuando el panel está activo */
+  .panel.animate .animate__animated {
+    animation-play-state: running;
+    opacity: 1;
+  }
+
+  /* Contenido centrado de cada panel */
+  .content {
+    text-align: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    padding: 2rem;
   }
   
   /* Estilos distintos para cada panel */
@@ -66,16 +63,6 @@ html, body {
     background-color: #f0f8ff;
   }
   
-  /* Contenido centrado de cada panel */
-  .content {
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    padding: 2rem;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease; /* Este valor debe coincidir con transitionTime en TypeScript */
-  }
   
   /* Efectos al entrar en cada sección */
   .panel.active .content {
@@ -83,28 +70,28 @@ html, body {
     transform: translateY(0);
   }
   
-  /* Indicadores de navegación opcionales */
-  .scroll-indicators {
-    position: fixed;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-  }
-  
-  .indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 10px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .indicator.active {
-    background-color: white;
-  }
+  /* Indicadores de navegación */
+.scroll-indicators {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: white;
+}
 
 
   

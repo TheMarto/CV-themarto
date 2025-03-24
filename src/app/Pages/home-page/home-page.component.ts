@@ -94,8 +94,8 @@ export class HomePageComponent implements AfterViewInit, OnDestroy  {
   
   // Variables para controlar la sensibilidad del scroll
   private lastScrollTime = 0;
-  private scrollThreshold = 50; // Umbral de desplazamiento para activar el cambio de sección
-  private scrollCooldown = 200; // Tiempo mínimo entre cambios de sección en ms
+  private scrollThreshold = 10; // Umbral de desplazamiento para activar el cambio de sección
+  private scrollCooldown = 100; // Tiempo mínimo entre cambios de sección en ms
   
   private handleScroll(e: WheelEvent): void {
     // Prevenimos el evento por defecto para tener control total sobre el scroll
@@ -181,38 +181,18 @@ export class HomePageComponent implements AfterViewInit, OnDestroy  {
   private setActivePanel(index: number): void {
     this.panels.forEach((panel, i) => {
       if (i === index) {
+        // Activar el panel actual
         panel.classList.add('active');
+        panel.classList.add('animate'); // Esta clase activa las animaciones
       } else {
+        // Desactivar los otros paneles
         panel.classList.remove('active');
-        
-        // Remover todas las clases de animación de Animate.css
-        panel.querySelectorAll('.animated-element').forEach(element => {
-          // Lista de posibles clases de animación de Animate.css que podrían estar activas
-          const animateClasses = [
-            'animate__animated', 'animate__fadeIn', 'animate__fadeInUp', 'animate__fadeInDown',
-            'animate__bounce', 'animate__flash', 'animate__pulse', 'animate__rubberBand',
-            'animate__shakeX', 'animate__shakeY', 'animate__headShake', 'animate__swing',
-            'animate__tada', 'animate__wobble', 'animate__jello', 'animate__heartBeat',
-            'animate__backInDown', 'animate__backInLeft', 'animate__backInRight', 'animate__backInUp',
-            'animate__bounceIn', 'animate__bounceInDown', 'animate__bounceInLeft', 'animate__bounceInRight',
-            'animate__bounceInUp', 'animate__fadeInBottomLeft', 'animate__fadeInBottomRight',
-            'animate__fadeInDown', 'animate__fadeInDownBig', 'animate__fadeInLeft',
-            'animate__fadeInLeftBig', 'animate__fadeInRight', 'animate__fadeInRightBig',
-            'animate__fadeInTopLeft', 'animate__fadeInTopRight', 'animate__fadeInUp',
-            'animate__fadeInUpBig', 'animate__flipInX', 'animate__flipInY', 'animate__lightSpeedInLeft',
-            'animate__lightSpeedInRight', 'animate__rotateIn', 'animate__rotateInDownLeft',
-            'animate__rotateInDownRight', 'animate__rotateInUpLeft', 'animate__rotateInUpRight',
-            'animate__zoomIn', 'animate__zoomInDown', 'animate__zoomInLeft', 'animate__zoomInRight',
-            'animate__zoomInUp', 'animate__slideInDown', 'animate__slideInLeft',
-            'animate__slideInRight', 'animate__slideInUp'
-          ];
-          
-          animateClasses.forEach(className => {
-            element.classList.remove(className);
-          });
-        });
+        panel.classList.remove('animate');
       }
     });
+    
+    // Actualizar los indicadores de navegación
+    this.updateIndicators(index);
   }
   
   /**
@@ -224,10 +204,11 @@ export class HomePageComponent implements AfterViewInit, OnDestroy  {
     const panel = this.panels[index];
     if (!panel) return;
     
-    // Aplicar la clase "animate" para iniciar las animaciones
-    panel.classList.add('animate');
+    // Simplemente añadimos la clase animate__animated a todos los elementos de animación
+    // en el panel activo
+    const animatedElements = panel.querySelectorAll('.animate__animated');
     
-    console.log(`Iniciando animaciones para el panel ${index}`);
+    console.log(`Activando ${animatedElements.length} animaciones en el panel ${index}`);
   }
   
   private updateIndicators(index: number): void {
