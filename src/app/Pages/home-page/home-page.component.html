@@ -1,0 +1,97 @@
+<div class="scroll-container p-0 m-0">
+    <!--####### Section ONE #######-->
+    <div class="panel active p-0 m-0" id="first" #panel>     
+        
+        <div class="content p-0 m-0">
+           
+
+
+            <div class=" col-12 col-md-8 w-100 h-100 d-flex flex-column justify-content-center completeNameStyle">
+                <h2 class="animate__animated  animate__zoomIn nameStyle">Norberto Martin</h2>
+                <h3 class="animate__animated  animate__zoomIn lastnameStyle">Arnal Ganz</h3>
+            </div>
+
+
+
+            <div class="animate__animated animate__backInRight  col-12 col-md-3 rounded-circle overflow-hidden position-absolute top-0 end-0 mt-5 me-5" style="width: 250px; height: 250px;">
+                <img 
+                src="assets/imagen.jpg"
+                alt="lala" 
+                class="" 
+                style="width: 250px;transform: translateY(-30px);"
+                >
+            </div>
+            <div class="svg-container position-absolute bottom-0 start-50 mb-0 p-0 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                    <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+                </svg>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--######## Section TWO ########-->
+    <div class="panel" id="second" #panel>
+        <div class="content">
+            <h2 class="animated-element bounce-in">About me</h2>
+            <p class="animated-element bounce-in" style="animation-delay: 1s;">Contenido con efecto bounce-in</p>
+            <div class="animated-element bounce-in" style="animation-delay: 0.4s;">
+                <button class="btn btn-light mt-3">Botón con Bounce In</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 3 -->
+    <div class="panel" id="third" #panel>
+        <div class="content">
+            <h2 class="animated-element fade-in-up">Tercera Sección</h2>
+            <p class="animated-element fade-in-up" style="animation-delay: 0.2s;">Contenido con efecto fade-in-up</p>
+            <div class="animated-element fade-in-up" style="animation-delay: 0.4s;">
+                <img src="assets/placeholder.jpg" alt="Imagen de ejemplo" style="max-width: 200px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 4 -->
+    <div class="panel" id="fourth" #panel>
+        <div class="content">
+            <h2 class="animated-element rotate-in">Cuarta Sección</h2>
+            <p class="animated-element rotate-in" style="animation-delay: 0.2s;">Contenido con efecto rotate-in</p>
+            <div class="row animated-element rotate-in" style="animation-delay: 0.4s;">
+                <div class="col-4">Elemento 1</div>
+                <div class="col-4">Elemento 2</div>
+                <div class="col-4">Elemento 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 5 -->
+    <div class="panel" id="fifth" #panel>
+        <div class="content">
+            <h2 class="animated-element zoom-in">Quinta Sección</h2>
+            <p class="animated-element zoom-in" style="animation-delay: 0.2s;">Contenido con efecto zoom-in</p>
+            <button class="btn btn-primary mt-3 animated-element zoom-in" style="animation-delay: 0.4s;">Botón con Zoom In</button>
+        </div>
+    </div>
+    
+    <!-- Indicadores de navegación (opcional) -->
+    <div class="scroll-indicators">
+        <div class="indicator active" (click)="scrollToPanel(0)"></div>
+        <div class="indicator" (click)="scrollToPanel(1)"></div>
+        <div class="indicator" (click)="scrollToPanel(2)"></div>
+        <div class="indicator" (click)="scrollToPanel(3)"></div>
+        <div class="indicator" (click)="scrollToPanel(4)"></div>
+    </div>
+</div>
+
+<!--HELPERS-->
+
+<!--name font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<!--last name font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
