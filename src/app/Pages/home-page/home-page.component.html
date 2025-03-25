@@ -1,26 +1,37 @@
 <div class="scroll-container p-0 m-0">
+
+
     <!--####### Section ONE #######-->
-    <div class="panel active p-0 m-0" id="first" #panel>     
-        
+    <div class="panel active p-0 m-0" id="first" #panel>   
+        <!--background-->
+        <div class="containerFist">
+            <div class="lado-izquierdo"></div>
+            <div class="lado-derecho"></div>
+        </div>  
+
+
+        <!--content-->
         <div class="content p-0 m-0">
-           
-
-
+            <!--name-->
             <div class=" col-12 col-md-8 w-100 h-100 d-flex flex-column justify-content-center completeNameStyle">
-                <h2 class="animate__animated animate__zoomIn nameStyle">Norberto Martin</h2>
-                <h3 class="animate__animated animate__zoomIn lastnameStyle">Arnal Ganz</h3>
+                <h2 class="animate__animated animate__fadeInTopLeft nameStyle">Norberto Martin</h2>
+                <h3 class="animate__animated animate__fadeInBottomLeft lastnameStyle">Arnal Ganz</h3>
             </div>
 
 
-
-            <div class="animate__animated animate__backInRight  col-12 col-md-3 rounded-circle overflow-hidden position-absolute top-0 end-0 mt-5 me-5" style="width: 250px; height: 250px;">
+            <!--image-->
+            <div 
+                class="animate__animated animate__zoomIn  col-12 col-md-3 border border-primary rounded overflow-hidden position-absolute bottom-0 end-0 me-5 imgStyle" 
+                style="animation-delay: 0,6s;"
+                >
                 <img 
                 src="assets/imagen.jpg"
                 alt="lala" 
                 class="" 
-                style="width: 250px;transform: translateY(-30px);"
+                style="width: 400px;"
                 >
             </div>
+            <!--svg indicator-->
             <div class="svg-container position-absolute bottom-0 start-50 mb-0 p-0 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                     <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
@@ -30,19 +41,49 @@
         
     </div>
 
+
+
     <!--######## Section TWO ########-->
-    <div class="panel" id="second" #panel>
-        <div class="content">
-            <h2 class="animate__animated  animate__zoomIn">About me</h2>
-            <p class="animate__animated  animate__zoomIn" style="animation-delay: 1s;">Contenido con efecto bounce-in</p>
-            <div class="animate__animated  animate__zoomIn" style="animation-delay: 0.4s;">
-                <button class="btn btn-light mt-3">Botón con Bounce In</button>
+    <div class="panel mh-100" id="second" #panel>
+        <!--background-->
+        <div class="containerSecond">
+            <div class="lado-izquierdosecond"></div>
+            <div class="lado-derechosecond"></div>
+        </div> 
+
+        <!--contet-->
+        <div class=" container-fluid">
+            <div class="row m-0 p-0 content">
+                <div class="col-6 d-flex flex-column align-items-start m-0 p-0">
+                    <h2 class="animate__animated  animate__zoomIn SobreMeStyle mb-5">Sobre me</h2>
+                    <p class="animate__animated  animate__zoomIn textStyleSecond" style="animation-delay: 1s;">
+                        Soy una persona apasionada por la tecnología, con especial interés en redes, informática y programación. Me gusta aprender constantemente, resolver problemas y enfrentar desafíos técnicos que me permitan crecer. Tengo experiencia con entornos Linux, virtualización con Proxmox, desarrollo web con Angular, NestJS y Bootstrap, además de manejar contenedores con Docker. También me he familiarizado con herramientas y equipos de red como Cisco, Mikrotik y Huawei. Me considero responsable, adaptable, con buena capacidad para trabajar en equipo y siempre con ganas de seguir mejorando tanto a nivel técnico como personal.
+                
+                    </p>
+                </div>
+                <!--svg-->
+                <div class="col-6 d-flex flex-column justify-content-center align-items-bottom m-0 p-0 text-center mt-5">
+                    
+                    <div class="svg-container svg-container2 mb-0 p-0 text-white">
+                        <h3 class="SobreMeStyle">Estudios</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                            <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Sección 3 -->
+
+
+    <!--######## Sección 3 ########-->
     <div class="panel" id="third" #panel>
+        <!--background-->
+        <div class="containerThird">
+            <div class="lado-izquierdothird"></div>
+            <div class="lado-derechothird"></div>
+        </div>
         <div class="content">
             <h2 class="animate__animated  fade-in-up">Tercera Sección</h2>
             <p class="animate__animated  fade-in-up" style="animation-delay: 0.2s;">Contenido con efecto fade-in-up</p>
@@ -51,6 +92,8 @@
             </div>
         </div>
     </div>
+
+
 
     <!-- Sección 4 -->
     <div class="panel" id="fourth" #panel>

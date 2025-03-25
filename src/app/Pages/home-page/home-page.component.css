@@ -36,7 +36,6 @@ html, body {
 
   /* Contenido centrado de cada panel */
   .content {
-    text-align: center;
     width: 100%;
     height: 100vh;
     padding: 2rem;
@@ -127,27 +126,138 @@ html, body {
     }
   }
 
-
-
-
   .nameStyle{
     font-family: Boldonse, sans-serif;
     font-weight: bold;
-    font-size: 100px; 
-    color: aliceblue;
+    font-size: 17vh; 
+    color: rgb(255, 255, 255);
     
   }
   .lastnameStyle{
     font-family: Raleway;
     font-weight: bold;
-    font-size: 100px; 
+    font-size: 10vh; 
     color: rgb(138, 138, 138);
   }
   .completeNameStyle{
-    transform: translateX(-190px);
+    transform: translateY(-20vh);
+  }
+  .imgStyle{
+   width: auto; 
+   height: 10hv;
+   
+  }
+
+  .containerFist {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  .lado-izquierdo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030c5a;
+    clip-path: polygon(0 0, 30% 0, 70% 100%, 0 100%);
+    z-index: -1;
+  }
+  .lado-derecho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3b3b3b;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 70% 100%);
+    
+    z-index: -1;
   }
 
 
-  #first {
-    background-color: rgb(3, 12, 90);
+
+  /*############## second panel  ###################*/
+  .SobreMeStyle{
+    font-size: 10vh;
+    font-family: Raleway;
+    font-weight: bold;
+    color: #868686;
+  }
+  .textStyleSecond{
+    font-size: 3vh;
+    font-family: Raleway;
+    color: white;
+  }
+
+  .containerSecond{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  .lado-izquierdosecond {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030c5a;
+    clip-path: polygon(0 0, 70% 0, 30% 100%, 0 100%);
+    
+    z-index: -1;
+  }
+  .lado-derechosecond {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3b3b3b;
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 30% 100%);
+    
+    z-index: -1;
+  }
+
+  .svg-container2{
+    position: absolute;
+    top: 90%;
+    left: 70%;
+  }
+
+
+
+  /*############## third panel  ###################*/
+  .containerThird{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  .lado-izquierdothird {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030c5a;
+    clip-path: polygon(0 0, 30% 0, 70% 100%, 0 100%);
+    z-index: -1;
+  }
+  .lado-derechothird {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3b3b3b;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 70% 100%);
+    z-index: -1;
   }
