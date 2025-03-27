@@ -206,7 +206,7 @@ html, body {
   .svg-container2{
     position: absolute;
     bottom:0%;
-    left: 50%;
+    left: 40%;
   }
 
 
@@ -219,6 +219,11 @@ html, body {
     z-index: -1;
     top: 0;
     left: 0;
+  }
+  .svg-container3{
+      position: absolute;
+      bottom:0%;
+      left: 12%;
   }
   .lado-izquierdothird {
     position: absolute;
@@ -240,7 +245,26 @@ html, body {
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 70% 100%);
     z-index: -1;
   }
-
+  #lista-habilidades .habilidad {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  #lista-habilidades .habilidad:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+  }
+  
 
 
 
