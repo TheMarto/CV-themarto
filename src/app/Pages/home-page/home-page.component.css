@@ -264,6 +264,47 @@ html, body {
     background-color: rgba(255, 255, 255, 0.15);
     transform: translateY(-3px);
   }
+
+
+
+    /*############## fourth panel  ###################*/
+
+  .containerfourth{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  .lado-izquierdofourth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030c5a;
+    clip-path: polygon(0 0, 70% 0, 30% 100%, 0 100%);
+    
+    z-index: -1;
+  }
+  .lado-derechofourth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3b3b3b;
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 30% 100%);
+    
+    z-index: -1;
+  }
+
+  .svg-container2{
+    position: absolute;
+    bottom:0%;
+    left: 40%;
+  }
   
 
 
