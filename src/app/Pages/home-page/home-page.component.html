@@ -17,11 +17,12 @@
                 <h2 class="animate__animated animate__fadeInTopLeft nameStyle">Norberto Martin</h2>
                 <h3 class="animate__animated animate__fadeInBottomLeft lastnameStyle">Arnal Ganz</h3>
             </div>
+            
 
 
             <!--image-->
             <div 
-                class="animate__animated animate__zoomIn  col-12 col-md-3 border border-primary rounded overflow-hidden position-absolute bottom-0 end-0 me-5 imgStyle" 
+                class="animate__animated animate__zoomIn  col-12 col-md-3 border border-primary rounded overflow-hidden position-absolute bottom-0 end-0 me-5 imgStyle d-none d-md-block" 
                 style="animation-delay: 0,6s;"
                 >
                 <img 
@@ -32,7 +33,7 @@
                 >
             </div>
             <!--svg indicator-->
-            <div class="svg-container position-absolute bottom-0 start-50 mb-0 p-0 text-white">
+            <div class="svg-container position-absolute bottom-0 start-50 mb-0 p-0 text-white d-none d-md-block">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                     <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
                 </svg>
@@ -62,9 +63,9 @@
                     </p>
                 </div>
                 <!--svg-->
-                <div class="col-6 d-flex flex-column justify-content-center align-items-bottom m-0 p-0 text-center animate__animated  animate__zoomIn ">
+                <div class="col-6 d-flex flex-column justify-content-center align-items-bottom m-0 p-0 text-center animate__animated  animate__zoomIn d-none d-md-block ">
                     
-                    <div class="svg-container svg-container2 mb-0 p-0 text-white">
+                    <div class="svg-container svg-container3 mb-0 p-0 text-white">
                         <h3 class="SobreMeStyle">Habilidades</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
                             <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
@@ -89,9 +90,9 @@
         <div class="container-fluid content p-0 m-0 d-flex flex-column justify-content-center align-items-bottom">
             <div class="row m-0 p-0 w-100 h-100">
                 <!--svg-->
-                <div class="col-6  m-0 p-0 text-center">
+                <div class="col-6  m-0 p-0 text-center  animate__animated  animate__zoomIn d-none d-md-block">
                         
-                    <div class="animate__animated  animate__zoomIn  svg-container  mb-0 p-0 svg-container3">
+                    <div class="svg-container  mb-0 p-0 svg-container3">
                         <h3 class="SobreMeStyle">Trayectoria</h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-down text-white" viewBox="0 0 16 16">
                             <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
@@ -99,19 +100,20 @@
                     </div>
                 </div>
 
-                <div class="col-6 p-0 m-0 text-center animate__animated  animate__zoomIn d-flex flex-column align-items-center">
-                    <h2 class="animate__animated  fade-in-up SobreMeStyle mt-2 mb-4">Habilidades</h2>
-                    <ul id="col-11 col-md-6 lista-habilidades" class="list-unstyled">
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-code-slash me-2"></i>Tilio de desarrollo de lilicaciones Web<li>
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-bootstrap-fill me-2"></i>Angular<li>
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-box-seam me-2"></i>Nest<li>
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-hdd-network me-2"></i>Docker y virtualizaciones<li>
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-router me-2"></i>Cisco<li>
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-wifi me-2"></i>Mikrotik<li>
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-house-door me-2"></i>HSI<li>
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-terminal me-2"></i>Linux<li>
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-terminal me-2"></i>Proxmox<li>
-                        <li class="habilidad text-white text-center mb-2" ><i class="bi bi-terminal me-2"></i>Redes<li>
+
+                <div class="col-12 col-md-6 p-0 m-0 text-center d-flex flex-column align-items-center">
+                    <h2 class="animate__animated  fade-in-up SobreMeStyle mt--2 mb-4">Habilidades</h2>
+                    <ul class="col-12 list-unstyled animate__animated  animate__zoomIn textStyleSecond" style="animation-delay: 1s;">
+                        <li class="text-white text-center" >Diploma de desarrollo de lilicaciones Web</li>
+                        <li class="text-white text-center" >Angular</li>
+                        <li class="text-white text-center" >Nest</li>
+                        <li class="text-white text-center" >Docker y virtualizaciones</li>
+                        <li class="text-white text-center" >Cisco</li>
+                        <li class="text-white text-center" >Mikrotik</li>
+                        <li class="text-white text-center" >HSI</li>
+                        <li class="text-white text-center" >Linux</li>
+                        <li class="text-white text-center" >Proxmox</li>
+                        <li class="text-white text-center" >Redes</li>
                     </ul>
                 </div>
             </div>
@@ -134,11 +136,13 @@
                 <div class="col-6 d-flex flex-column align-items-start m-0 p-0">
                     <h2 class="animate__animated  animate__zoomIn SobreMeStyle mb-5">Trayectoria</h2>
                     <p class="animate__animated  animate__zoomIn textStyleSecond" style="animation-delay: 1s;">
-                        Texto de Trayectoria    
+                        He trabajado en diversos ISP y WISP, desempeñando tareas clave en el área de redes, seguridad informática y administración de sistemas. Durante este tiempo, participé en la configuración y mantenimiento de equipos de red (Mikrotik, Cisco, Huawei), implementación de medidas de seguridad perimetral, y gestión de infraestructura tecnológica tanto a nivel físico como lógico.
+                        También puse en marcha servidores en entornos Linux, implementando servicios, automatizaciones y herramientas orientadas al soporte y optimización de redes. Manejo tecnologías como Proxmox para virtualización, Docker para la gestión de contenedores, y he trabajado en proyectos de desarrollo y despliegue de aplicaciones web usando Angular, NestJS y Bootstrap.
+                        Esta experiencia me permitió adquirir una visión integral del funcionamiento técnico de un ISP, con enfoque en la resolución de problemas, estabilidad de servicios y mejora continua.
                     </p>
                 </div>
                 <!--svg-->
-                <div class="col-6 d-flex flex-column justify-content-center align-items-bottom m-0 p-0 text-center animate__animated  animate__zoomIn ">
+                <div class="col-6 d-flex flex-column justify-content-center align-items-bottom m-0 p-0 text-center  animate__animated  animate__zoomIn  d-none d-md-block">
                     
                     <div class="svg-container svg-container2 mb-0 p-0 text-white">
                         <h3 class="SobreMeStyle">Contacto</h3>
@@ -166,9 +170,8 @@
         
           <!--content-->
         <div class="content">
-            <h2 class="animate__animated zoom-in">Quinta Sección</h2>
-            <p class="animate__animated zoom-in" style="animation-delay: 0.2s;">Contenido con efecto zoom-in</p>
-            <button class="btn btn-primary mt-3 animate__animated zoom-in" style="animation-delay: 0.4s;">Botón con Zoom In</button>
+            <h2 class="animate__animated zoom-in SobreMeStyle">Contacto</h2>
+            <p class="animate__animated zoom-in textStyleSecond mt-2 ms-2" style="animation-delay: 0.2s;" >info&#64;themarto.es</p>
         </div>
     </div>
 

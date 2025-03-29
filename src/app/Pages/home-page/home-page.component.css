@@ -70,6 +70,12 @@ html, body {
   background-color: white;
 }
 
+.svg-container2{
+  position: absolute;
+  bottom:0%;
+  left: 30%;
+}
+
 
   
 /*####### FIRST PANEL ##########*/
@@ -109,7 +115,11 @@ html, body {
     font-family: Boldonse, sans-serif;
     font-weight: bold;
     font-size: 17vh; 
-    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, #e9e9e9, #8c8a8f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
     
   }
   .lastnameStyle{
@@ -170,6 +180,7 @@ html, body {
     font-size: 3vh;
     font-family: Raleway;
     color: white;
+    text-decoration: none;
   }
 
   .containerSecond{
@@ -203,10 +214,10 @@ html, body {
     z-index: -1;
   }
 
-  .svg-container2{
+  .svg-container3{
     position: absolute;
     bottom:0%;
-    left: 40%;
+    left: 20%;
   }
 
 
@@ -219,11 +230,6 @@ html, body {
     z-index: -1;
     top: 0;
     left: 0;
-  }
-  .svg-container3{
-      position: absolute;
-      bottom:0%;
-      left: 12%;
   }
   .lado-izquierdothird {
     position: absolute;
@@ -245,67 +251,44 @@ html, body {
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 70% 100%);
     z-index: -1;
   }
-  #lista-habilidades .habilidad {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 0.75rem 1rem;
-    margin-bottom: 0.75rem;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  #lista-habilidades .habilidad:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    transform: translateY(-3px);
-  }
 
-
-
-    /*############## fourth panel  ###################*/
-
-  .containerfourth{
+  .svg-container3{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    left: 12%;
   }
-  .lado-izquierdofourth {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #030c5a;
-    clip-path: polygon(0 0, 70% 0, 30% 100%, 0 100%);
-    
-    z-index: -1;
-  }
-  .lado-derechofourth {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #3b3b3b;
-    clip-path: polygon(70% 0, 100% 0, 100% 100%, 30% 100%);
-    
-    z-index: -1;
-  }
+    /*############## Fourth panel  ###################*/
 
-  .svg-container2{
-    position: absolute;
-    bottom:0%;
-    left: 40%;
-  }
-  
+    .lado-izquierdofourth {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #030c5a;
+      clip-path: polygon(0 0, 70% 0, 30% 100%, 0 100%);
+      
+      z-index: -1;
+    }
+    .lado-derechofourth {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #3b3b3b;
+      clip-path: polygon(70% 0, 100% 0, 100% 100%, 30% 100%);
+      
+      z-index: -1;
+    }
+    .containerfourth{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
 
 
 
@@ -363,5 +346,16 @@ html, body {
     }
     100% {
       transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+
+
+  /*change with the px*/
+  @media (max-width: 800px) {
+    .nameStyle {
+      font-size: 6vh;
+    }
+    .lastnameStyle{
+      font-size: 4vh;
     }
   }
